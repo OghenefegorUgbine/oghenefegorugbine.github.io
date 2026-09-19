@@ -44,12 +44,21 @@
     navToggle.addEventListener("click", function () {
       var open = navLinks.classList.toggle("is-open");
       navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      document.body.classList.toggle("nav-open", open);
     });
     navLinks.querySelectorAll("a").forEach(function (a) {
       a.addEventListener("click", function () {
         navLinks.classList.remove("is-open");
         navToggle.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("nav-open");
       });
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && navLinks.classList.contains("is-open")) {
+        navLinks.classList.remove("is-open");
+        navToggle.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("nav-open");
+      }
     });
   }
 

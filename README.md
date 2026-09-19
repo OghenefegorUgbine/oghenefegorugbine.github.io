@@ -112,12 +112,11 @@ portfolio-site/
    date of birth is still visible on both, same treatment as the degree
    certificates. The SAP score report was not touched and stays private,
    you didn't ask for it and it wasn't part of this request.
-10. **Erasmus Mundus Certificate of Admission, now public.** Linked from the
-    Erasmus Mundus Joint Master's Scholarship card in Awards. The original
-    document had your passport number and your Saint-Etienne home address
-    printed on it, both have been redacted (removed from the underlying PDF
-    text) before publishing; date of birth and the scholarship's financial
-    figures are still shown, same reasoning as the other public documents.
+10. **Erasmus Mundus Certificate of Admission, now public in full.** Linked
+    from the Erasmus Mundus Joint Master's Scholarship card in Awards, and
+    published exactly as issued at your request, with nothing covered. Please
+    note this document has your passport number, your Saint-Etienne home
+    address, and your date of birth printed on it, all now publicly visible.
 
 ## Publishing to GitHub Pages (step by step)
 

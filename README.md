@@ -85,9 +85,9 @@ portfolio-site/
    now the CV you supplied in this round, replacing the earlier version.
 4. **Degree certificates, now public.** École des Mines de Saint-Étienne,
    École Centrale de Lyon, and CRUTECH certificates are linked from the
-   Education section. Grade/honours text ("mention Bien", "Second Class
-   Hons. Upper Division") has been redacted with a black bar on the two
-   that showed one. Politecnico di Torino isn't published: you said you
+   Education section and published in full, exactly as issued, with
+   nothing on them covered or removed. Only the degree certificates go up,
+   no transcripts. Politecnico di Torino isn't published: you said you
    don't have that certificate yet, so it shows "available on request"
    instead of a link.
 5. **All grades and class rankings removed.** CGPA, class of degree,

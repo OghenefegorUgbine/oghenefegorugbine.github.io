@@ -317,6 +317,8 @@ section:first-of-type { border-top: none; }
 .cert-name { font-weight: 600; font-size: 0.98rem; line-height: 1.35; }
 .cert-meta { display: flex; justify-content: space-between; font-size: 0.82rem; color: var(--text-dim); margin-top: 4px; }
 .cert-evidence { font-size: 0.76rem; color: var(--text-faint); font-family: var(--font-mono); }
+.cert-link { font-size: 0.82rem; font-weight: 600; color: var(--accent); text-decoration: none; margin-top: auto; padding-top: 4px; }
+.cert-link:hover, .cert-link:focus-visible { text-decoration: underline; }
 
 /* ---------- Publications ---------- */
 .pub-list { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }

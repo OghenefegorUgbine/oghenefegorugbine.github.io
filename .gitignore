@@ -1,0 +1,30 @@
+# ============================================================
+# Private / sensitive source documents: NEVER commit these.
+#
+# Free GitHub Pages has no server, no login, and no way to gate
+# a single file: anything pushed to a public repo is public to
+# anyone with the URL, indexable by search engines, and kept in
+# git history even after you delete it later. Everything below
+# is real personal documentation extracted from your portfolio
+# PDF, kept here only for your own reference and for you to
+# selectively re-attach later if you ever want to (e.g. behind
+# a real login, or emailed individually on request).
+#
+# The public website never links to any file in these folders.
+# See documents/README.md for the full public/private index.
+# ============================================================
+
+documents/recommendation-letters/
+documents/education/
+documents/redacted-documents/
+documents/certificates/
+documents/experience/
+documents/_private-source/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local tooling
+.paths.env

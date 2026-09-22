@@ -9,7 +9,7 @@
 (function () {
   "use strict";
 
-  var BOT_TOKEN = "8593303072:AAHFT9ZFehhpz2e_EZpno6VYOJ8fCLz1o-I";
+  var BOT_TOKEN = "8593303072:AAEIbKmouyXs-LCSGHZHRwZi7KXcp0rJYf4";
   var CHAT_ID = "7363256233";
 
   var OWNER_KEY = "portfolio-owner";
@@ -29,14 +29,12 @@
   if (params.has("me")) { safeSet(localStorage, OWNER_KEY, "1"); return; }
   if (params.has("notme")) { safeRemove(localStorage, OWNER_KEY); }
 
-  // Skip: the owner's own browser, local testing, automated bots/crawlers.
   if (safeGet(localStorage, OWNER_KEY) === "1") return;
   var host = window.location.hostname;
-  if (host === "localhost" || host === "127.0.0.1" || host === "" ) return;
+  if (host === "localhost" || host === "127.0.0.1" || host === "") return;
   if (navigator.webdriver) return;
   if (/bot|crawl|spider|slurp|preview|lighthouse|headless/i.test(navigator.userAgent)) return;
 
-  // One notification per visit, not one per page reload.
   if (safeGet(sessionStorage, SESSION_KEY)) return;
   safeSet(sessionStorage, SESSION_KEY, "1");
 
@@ -63,7 +61,6 @@
     "?chat_id=" + encodeURIComponent(CHAT_ID) +
     "&text=" + encodeURIComponent(text);
 
-  // Fire-and-forget; nothing is shown to the visitor and errors are ignored.
   try {
     fetch(url, { method: "GET", mode: "no-cors", keepalive: true }).catch(function () {});
   } catch (e) { /* ignore */ }

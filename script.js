@@ -1,5 +1,5 @@
 /* Oghenefegor Favour Ugbine | Portfolio interactivity
-   No dependencies, no external services, no tracking. */
+   No dependencies. Visit notifications live in visit-notify.js. */
 (function () {
   "use strict";
 
